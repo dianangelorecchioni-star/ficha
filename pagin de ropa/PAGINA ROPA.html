@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ropa DianRecc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👕</text></svg>">
+    <meta name="color-scheme" content="light dark" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1 class="title">Ropa DianRecc</h1>
+                <center><a href="../fichadian.html">
+    <button>Volver a mi ficha</button>
+</a></center>  <center><a href="../pagina de minecraft/Minecraft.html">
+    <button class="boton">Ir a la ficha de Minecraft</button>
+</a></center>
+
+</center>
+            </div>
+            <div class="actions">
+                <button id="favoritesButton" class="cart-button" aria-haspopup="dialog" aria-controls="favoritesDialog" title="Ver favoritos">
+                    ❤ <span id="favCount" class="badge">0</span>
+                </button>
+                <button id="cartButton" class="cart-button" aria-haspopup="dialog" aria-controls="cartDialog">
+                    🛒 <span id="cartCount" class="badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="controls" aria-label="Controles de listado">
+            <div class="filters" id="materialFilters"></div>
+            <label class="sort">
+                Ordenar:
+                <select id="sortSelect" aria-label="Ordenar productos">
+                    <option value="default">Por defecto</option>
+                    <option value="price-asc">Precio: menor a mayor</option>
+                    <option value="price-desc">Precio: mayor a menor</option>
+                    <option value="name-asc">Nombre: A-Z</option>
+                    <option value="name-desc">Nombre: Z-A</option>
+                </select>
+            </label>
+        </section>
+        <section class="products" id="products">
+            <!-- Producto 1 -->
+            <article class="producto card" id="producto1" data-name="Remera Negra con Diseño" data-material="Algodón 100%" data-price="54000">
+                <div class="imagen">
+                    <img src="../images/sin fondo/ropa sin fondo/remera1.png" alt="Remera negra con diseño" data-toggle="details">
+                </div>
+                <div class="info">
+                    <h3 class="name">Remera Negra con Diseño</h3>
+                    <p class="price">$54.000</p>
+                    <p class="meta">Material: <strong>Algodón 100%</strong></p>
+                    <p class="meta">Talles: S - M - L - XL</p>
+                    <div class="buttons">
+                        <button class="fav" data-fav-toggle aria-pressed="false" title="Agregar a favoritos">❤</button>
+                        <button class="secondary" data-toggle="image">Volver</button>
+                        <button class="primary" data-add-to-cart>Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="producto card" id="producto2" data-name="Remera Negra con Diseño" data-material="Poliéster y Algodón" data-price="60000">
+                <div class="imagen">
+                    <img src="../images/sin fondo/ropa sin fondo/remera2.png" alt="Remera negra con diseño 2" data-toggle="details">
+                </div>
+                <div class="info">
+                    <h3 class="name">Remera Negra con Diseño</h3>
+                    <p class="price">$60.000</p>
+                    <p class="meta">Material: <strong>Poliéster y Algodón</strong></p>
+                    <p class="meta">Talles: S - M - L - XL</p>
+                    <div class="buttons">
+                        <button class="fav" data-fav-toggle aria-pressed="false" title="Agregar a favoritos">❤</button>
+                        <button class="secondary" data-toggle="image">Volver</button>
+                        <button class="primary" data-add-to-cart>Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="producto card" id="producto3" data-name="Remera Blanca con Detalles" data-material="Algodón orgánico" data-price="50000">
+                <div class="imagen">
+                    <img src="../images/sin fondo/ropa sin fondo/remera3.png" alt="Remera blanca con detalles" data-toggle="details">
+                </div>
+                <div class="info">
+                    <h3 class="name">Remera Blanca con Detalles</h3>
+                    <p class="price">$50.000</p>
+                    <p class="meta">Material: <strong>Algodón orgánico</strong></p>
+                    <p class="meta">Talles: S - M - L - XL</p>
+                    <div class="buttons">
+                        <button class="fav" data-fav-toggle aria-pressed="false" title="Agregar a favoritos">❤</button>
+                        <button class="secondary" data-toggle="image">Volver</button>
+                        <button class="primary" data-add-to-cart>Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Producto 4 -->
+            <article class="producto card" id="producto4" data-name="Remera Oversize" data-material="Algodón" data-price="52000">
+                <div class="imagen">
+                    <img src="../images/sin fondo/ropa sin fondo/remera4.png" alt="Remera oversize" data-toggle="details">
+                </div>
+                <div class="info">
+                    <h3 class="name">Remera Oversize</h3>
+                    <p class="price">$52.000</p>
+                    <p class="meta">Material: <strong>Algodón</strong></p>
+                    <p class="meta">Talles: S - M - L - XL</p>
+                    <div class="buttons">
+                        <button class="fav" data-fav-toggle aria-pressed="false" title="Agregar a favoritos">❤</button>
+                        <button class="secondary" data-toggle="image">Volver</button>
+                        <button class="primary" data-add-to-cart>Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 5 -->
+            <article class="producto card" id="producto5" data-name="Remera Estampada" data-material="Poliéster" data-price="48000">
+                <div class="imagen">
+                    <img src="../images/sin fondo/ropa sin fondo/remera5.png" alt="Remera estampada" data-toggle="details">
+                </div>
+                <div class="info">
+                    <h3 class="name">Remera Estampada</h3>
+                    <p class="price">$48.000</p>
+                    <p class="meta">Material: <strong>Poliéster</strong></p>
+                    <p class="meta">Talles: S - M - L - XL</p>
+                    <div class="buttons">
+                        <button class="fav" data-fav-toggle aria-pressed="false" title="Agregar a favoritos">❤</button>
+                        <button class="secondary" data-toggle="image">Volver</button>
+                        <button class="primary" data-add-to-cart>Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 6 -->
+            <article class="producto card" id="producto6" data-name="Remera Básica" data-material="Algodón" data-price="42000">
+                <div class="imagen">
+                    <img src="../images/sin fondo/ropa sin fondo/remera6.png" alt="Remera básica" data-toggle="details">
+                </div>
+                <div class="info">
+                    <h3 class="name">Remera Básica</h3>
+                    <p class="price">$42.000</p>
+                    <p class="meta">Material: <strong>Algodón</strong></p>
+                    <p class="meta">Talles: S - M - L - XL</p>
+                    <div class="buttons">
+                        <button class="fav" data-fav-toggle aria-pressed="false" title="Agregar a favoritos">❤</button>
+                        <button class="secondary" data-toggle="image">Volver</button>
+                        <button class="primary" data-add-to-cart>Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 7 -->
+            <article class="producto card" id="producto7" data-name="Remera Técnica" data-material="Dry-Fit" data-price="65000">
+                <div class="imagen">
+                    <img src="../images/sin fondo/ropa sin fondo/remera7.png" alt="Remera técnica" data-toggle="details">
+                </div>
+                <div class="info">
+                    <h3 class="name">Remera</h3>
+                    <p class="price">$65.000</p>
+                    <p class="meta">Material: <strong>Dry-Fit</strong></p>
+                    <p class="meta">Talles: S - M - L - XL</p>
+                    <div class="buttons">
+                        <button class="fav" data-fav-toggle aria-pressed="false" title="Agregar a favoritos">❤</button>
+                        <button class="secondary" data-toggle="image">Volver</button>
+                        <button class="primary" data-add-to-cart>Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 8 -->
+            <article class="producto card" id="producto8" data-name="Remera Bordada" data-material="Algodón" data-price="70000">
+                <div class="imagen">
+                    <img src="../images/sin fondo/ropa sin fondo/remera8.png" alt="Remera bordada" data-toggle="details">
+                </div>
+                <div class="info">
+                    <h3 class="name">Remera ajustada</h3>
+                    <p class="price">$70.000</p>
+                    <p class="meta">Material: <strong>Algodón</strong></p>
+                    <p class="meta">Talles: S - M - L - XL</p>
+                    <div class="buttons">
+                        <button class="fav" data-fav-toggle aria-pressed="false" title="Agregar a favoritos">❤</button>
+                        <button class="secondary" data-toggle="image">Volver</button>
+                        <button class="primary" data-add-to-cart>Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 9 -->
+            <article class="producto card" id="producto9" data-name="Remera Premium" data-material="Algodón Pima" data-price="95000">
+                <div class="imagen">
+                    <img src="../images/sin fondo/ropa sin fondo/remera9.png" alt="Remera premium" data-toggle="details">
+                </div>
+                <div class="info">
+                    <h3 class="name">Remera rock</h3>
+                    <p class="price">$95.000</p>
+                    <p class="meta">Material: <strong>Algodón Pima</strong></p>
+                    <p class="meta">Talles: S - M - L - XL</p>
+                    <div class="buttons">
+                        <button class="fav" data-fav-toggle aria-pressed="false" title="Agregar a favoritos">❤</button>
+                        <button class="secondary" data-toggle="image">Volver</button>
+                        <button class="primary" data-add-to-cart>Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <button id="toTopBtn" class="to-top" aria-label="Volver arriba">↑</button>
+
+    <dialog id="cartDialog" class="cart-dialog">
+        <div class="cart-header">
+            <h2>Carrito</h2>
+            <button class="icon-btn" id="closeCart" aria-label="Cerrar">✖</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="totals">
+                <span>Total:</span>
+                <strong id="cartTotal">$0</strong>
+            </div>
+            <button class="primary" id="checkoutBtn">Finalizar compra</button>
+        </div>
+    </dialog>
+
+    <dialog id="favoritesDialog" class="cart-dialog fav-dialog">
+        <div class="cart-header">
+            <h2>Favoritos</h2>
+            <button class="icon-btn" id="closeFavs" aria-label="Cerrar">✖</button>
+        </div>
+        <div id="favItems" class="cart-items"></div>
+    </dialog>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Ropa dianrecc.Hecho por Dian Angelo Recchioni</p>
+        </div>
+    </footer>
+</body>
+</html>

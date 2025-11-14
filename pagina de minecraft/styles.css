@@ -1,0 +1,152 @@
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+h1, h2, h3 {
+  color: #2a7a2a;
+}
+
+p {
+  max-width: 850px;
+}
+
+.section {
+  margin-bottom: 40px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* Índice simple */
+.toc {
+  margin: 14px 0 24px 0;
+}
+.toc a {
+  display: inline-block;
+  margin: 6px 8px 0 0;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e9f5e9;
+  color: #205e20;
+  text-decoration: none;
+  border: 1px solid #d7edd7;
+}
+.toc a:hover {
+  background: #dff0df;
+}
+
+/* Tablas */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+th {
+  background: #e9f5e9;
+  color: #205e20;
+  font-weight: bold;
+}
+
+tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  color: #205e20;
+  margin-bottom: 10px;
+}
+
+/* Chips simples (para materiales, recursos, etc.) */
+.chips {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #eef7ee;
+  color: #205e20;
+  font-size: 12px;
+  border: 1px solid #d7edd7;
+}
+
+/* Listas */
+ul {
+  max-width: 850px;
+}
+
+/* Detalles/Resumen (acordeones) */
+details {
+  border: 1px solid #e0e6e0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fbfdfb;
+  margin: 12px 0;
+}
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #205e20;
+}
+details[open] {
+  background: #f4fbf4;
+}
+
+/* Pequeño header opcional */
+.header {
+  margin-bottom: 24px;
+}
+
+.header p {
+  margin: 8px 0 0 0;
+}
+
+/* Centrado del título principal */
+.header {
+  text-align: center;
+}
+
+/* Iconos genéricos (placeholders para imágenes) */
+.icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 4px;
+  background: #eeeeee;
+}
+
+/* Responsivo básico */
+@media (max-width: 640px) {
+  body {
+    margin: 14px;
+  }
+  th, td {
+    padding: 10px 12px;
+  }
+}

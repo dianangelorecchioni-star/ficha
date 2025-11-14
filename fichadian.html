@@ -1,0 +1,106 @@
+<DOCTYPE> 
+<HTML>
+<HEAD title=" ficha dian">
+<meta charset= " utf-8" />
+</HEAD>
+<center>
+    <h2 style="font-family: Arial; color: #b30000;"> 👑 Dian Angelo Recchioni 👑 </h2>
+
+    <h2 style="font-family: 'Comic Sans MS'; color: #01579b;">🌺🥶🥶 Datos mios 🥶🥶🌺</h2>
+
+    <table border="1" width="80%" cellpadding="10" cellspacing="0" bgcolor="#e1f5fe" bordercolor="#81d4fa">
+        <tr bgcolor="#4fc3f7">
+            <th>Nombre</th>
+            <th>DNI</th>
+            <th>Curso</th>
+            <th>Gmail</th>
+            <th>Ciudad</th>
+            <th>Nacionalidad</th>
+            <th>Teléfono</th>
+            <th>Página Ropa</th>
+            <th>Página Minecraft</th>
+        </tr>
+        <tr>
+            <td>Dian Angelo Recchioni</td>
+            <td>47375193</td>
+            <td>4°1 c.s Inf.</td>
+            <td>dianangelorecchioni@gmail.com</td>
+            <td>General Roca</td>
+            <td>Argentina</td>
+            <td>+54 298-4367316</td>
+            <td><a href="pagin de ropa/PAGINA ROPA.html">Link PagRopa</a></td>
+            <td><a href="pagina de minecraft/Minecraft.html">Link PagMinecraft</a></td>
+        </tr>
+    </table>
+</center>
+<center>
+
+    <h3 id="mensaje" style="
+        font-family: Arial; 
+        color: #ffffff; 
+        transition: all 0.5s ease; 
+        text-shadow: 0 0 10px #b30000;
+    ">
+        Poné tu cursor sobre mis ojos, pelo, oreja, nariz, mentón, boca, cejas y grano
+    </h3>
+
+    <script>
+        const mensaje = document.getElementById("mensaje");
+
+        mensaje.addEventListener("mouseenter", () => {
+            mensaje.style.color = "#ff0033";
+            mensaje.style.textShadow = "0 0 20px #ff0033, 0 0 30px #ff6699";
+            mensaje.style.transform = "scale(1.1)";
+        });
+
+        mensaje.addEventListener("mouseleave", () => {
+            mensaje.style.color = "#ffffff";
+            mensaje.style.textShadow = "0 0 10px #b30000";
+            mensaje.style.transform = "scale(1)";
+        });
+    </script>
+</center>
+<div style="text-align:center">
+<img src="images\foto cara\Dian.jpg" alt="Foto no encontrada" title="Dian Recchioni" usemap="#mapaDian" width="560" height="500">
+</div>
+<map name="mapaDian">
+
+    <!-- Ojo izquierdo -->
+    <area shape="poly" coords="168,160,184,144,203,145,215,146,214,152,203,157,188,160" href="" title="Ojo izquierdo">
+
+    <!-- Ojo derecho -->
+    <area shape="poly" coords="278,144,304,136,333,139,347,145,322,148,298,146" href="" title="Ojo derecho">
+
+    <!-- Nariz -->
+    <area shape="poly" coords="228,129,219,143,216,159,198,176,197,199,210,215,270,212,279,193,254,134" href="" title="Nariz">
+
+    <!-- Grano -->
+    <area shape="circle" coords="303,194,3px" href="" title="Grano">
+
+    <!-- Oreja derecha -->
+    <area shape="poly" coords="435,185,411,202,404,239,449,217,448,198" href="" title="Oreja Derecha">
+	    <!-- Boca -->
+ <area shape="poly" coords="188,265,206,233,233,234,241,230,254,233,288,255,260,270,230,273,216,272,231,273,201,268" href="" title="Boca">
+     <!-- Pelo -->
+  <area shape="poly" coords="149,157,199,63,215,115,262,117,273,64,302,122,299,70,345,80,398,144,408,70,315,7,201,7,126,103" href="" title="Pelo">
+      <!-- Ceja izquierda-->
+  <area shape="poly" coords="214,118,176,119,151,137,150,118,180,100,219,106" href="" title="Ceja izquierdo">
+      <!-- Ceja Derecha -->
+  <area shape="poly" coords="365,127,325,110,271,110,272,97,321,89,369,114" href="" title="Ceja derecha">
+      <!-- Menton -->
+   <area shape="poly" coords="250,365,202,354,182,320,238,297,308,310,268,350" href="" title="Mentón">
+</map>
+<br>
+<center><a href="../fichas/ficha-curso.html">
+    <button class="boton"><h2 class="volver">Volver a las fichas del curso</h2></button>
+</a></center>
+<style>
+    .boton{
+        height: 75px;
+        border-radius: 30px;
+    }
+</style>
+
+</BODY>
+
+</HTML>
